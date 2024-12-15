@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build", 
+                "${workspaceFolder}/build",  // Path to the build directory
+                "--target", "tab"  // The target executable you want to build
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc",  // Use the built-in GCC/Clang problem matcher for GCC or Clang compilers
+            ],
+            "detail": "Build the C++ project using CMake"
+        }
+    ]
+}
+
